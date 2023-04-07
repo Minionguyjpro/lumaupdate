@@ -94,7 +94,7 @@ $(ZIPNAME): $(OUTPUT).cia $(OUTPUT).3dsx $(OUTPUT).smdh
 
 # Output
 
-MAKEROM ?= makerom
+MAKEROM ?= meta/makerom
 
 $(OUTPUT).elf: $(OFILES)
 
