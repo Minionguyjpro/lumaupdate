@@ -95,6 +95,7 @@ $(ZIPNAME): $(OUTPUT).cia $(OUTPUT).3dsx $(OUTPUT).smdh
 # Output
 
 MAKEROM ?= meta/makerom
+MAKEROM_WIN ?= meta/makerom.exe
 
 $(OUTPUT).elf: $(OFILES)
 
@@ -107,6 +108,7 @@ $(OUTPUT).cia: $(OUTPUT).elf $(BUILD)/banner.bnr $(BUILD)/icon.icn
 # Banner
 
 BANNERTOOL ?= meta/bannertool
+BANNERTOOL_WIN ?= meta/bannertool.exe
 
 ifeq ($(suffix $(BANNER_IMAGE)),.cgfx)
 	BANNER_IMAGE_ARG := -ci
