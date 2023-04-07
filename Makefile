@@ -106,7 +106,7 @@ $(OUTPUT).cia: $(OUTPUT).elf $(BUILD)/banner.bnr $(BUILD)/icon.icn
 
 # Banner
 
-BANNERTOOL ?= bannertool
+BANNERTOOL ?= meta/bannertool
 
 ifeq ($(suffix $(BANNER_IMAGE)),.cgfx)
 	BANNER_IMAGE_ARG := -ci
