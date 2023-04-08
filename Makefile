@@ -9,7 +9,7 @@ include $(DEVKITARM)/3ds_rules
 CFGFILE ?= Makefile.config
 include $(CURDIR)/$(CFGFILE)
 
-TARGET   := $(BINDIR)/$(BINNAME)
+TARGET   := $(CURDIR)/$(BINNAME)
 
 LIBS     := $(foreach lib,$(LIBRARIES),-l$(lib))
 LIBDIRS  := $(CTRULIB) $(PORTLIBS)
